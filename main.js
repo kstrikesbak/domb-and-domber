@@ -1,11 +1,11 @@
 function appendToUl(element) {
-    const append1 = document.querySelector(element);
-    // return append1.appendChild(element);
+    const append1 = document.querySelector('ul');
+    append1.appendChild(element);
 }
 
 function appendToDiv(element) {
-    const div = document.querySelector('div');
-    div.id = 'lorem'
+    const append2 = document.querySelector('div');
+    append2.id = 'lorem'
     // return append2.appendChild(element);
 }
 
@@ -35,6 +35,9 @@ function colorId(color,id) {
 }
 
 
+const paragraph = document.createElement('h1');
+paragraph.innerText = 'HIIIIIII'
+appendToUl(paragraph);
 
 
 
