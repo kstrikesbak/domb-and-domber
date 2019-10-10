@@ -4,26 +4,23 @@ function appendToUl(element) {
 }
 
 function appendToDiv(element) {
-    const append2 = document.querySelector('div#lorem');
+    const append2 = document.querySelector('#lorem');
     append2.appendChild(element);
     // return append2.appendChild(element);
 }
 
-function takesInTextAndReturnsAnLi(str) {
+function takesInTextAndReturnsAnLi(text) {
     const newLi = document.createElement('li');
-    const li = document.querySelector('li');
-    newLi.innerText(str);
-    return li.appendChild(newLi);
+    newLi.innerText = text;
+    return text;
 }
 
-function takesInImageSourceToBeString(img,str) {
-    const imageSource = document.querySelector(img);
+function takesInImageSourceToBeString(url,image) {
+    image.src = url;
 }
 
 function changeToSameClass(element1,element2) {
-    const firstElement = document.querySelector(element1);
-    const secondElement = document.querySelector(element2);
-    return secondElement.class = firstElement.class
+    secondElement.classname = firstElement.classname;
 }
 
 function makesAnElementWithThatId(tag,id) {
@@ -32,9 +29,9 @@ function makesAnElementWithThatId(tag,id) {
     return newElement;
 }
 
-function takesInTwoStringsAndDoesSomething(color, id) {
-    const newColor = document.querySelector(id);
-    newColor.style.color = color;
+function takesInTwoStringsAndDoesSomething(id, color) {
+    const element = document.querySelector(id);
+    element.style.color = color;
 }
 
 takesInTextAndReturnsAnLi('kejal-1');
