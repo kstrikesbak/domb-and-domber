@@ -19,7 +19,7 @@ function takesInImageSourceToBeString(url,image) {
     image.src = url;
 }
 
-function changeToSameClass(element1,element2) {
+function changeToSameClass(firstElement,secondElement) {
     secondElement.classname = firstElement.classname;
 }
 
