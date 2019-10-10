@@ -12,7 +12,7 @@ function appendToDiv(element) {
 function takesInTextAndReturnsAnLi(text) {
     const newLi = document.createElement('li');
     newLi.innerText = text;
-    return text;
+    return newLi;
 }
 
 function takesInImageSourceToBeString(url,image) {
@@ -34,6 +34,6 @@ function takesInTwoStringsAndDoesSomething(id, color) {
     element.style.color = color;
 }
 
-takesInTextAndReturnsAnLi('kejal-1');
+appendToUl(takesInTextAndReturnsAnLi('kejal-1'));
 takesInTextAndReturnsAnLi('kejal-2');
 takesInTextAndReturnsAnLi('kejal-3');
