@@ -1,39 +1,60 @@
-function appendToUl(element) {
-    const append1 = document.querySelector('ul');
-    append1.appendChild(element);
+function appendToUl (element) {
+    const newLiInUl = document.querySelector('ul');
+    newLiInUl.appendChild(element);
 }
 
-function appendToDiv(element) {
-    const append2 = document.querySelector('#lorem');
-    append2.appendChild(element);
-    // return append2.appendChild(element);
+// const heading = document.createElement('h1');
+// heading.innerText('TEST');
+// appendToUl(heading);
+
+function appendToDiv (element) {
+    const newElementInDiv = document.querySelector('#lorem');
+    newElementInDiv.appendChild(element);
 }
 
-function takesInTextAndReturnsAnLi(text) {
+// const thing = document.createElement('li');
+// thing.innerText("TEST");
+// appendToDiv(thing);
+
+function takesInTextAndReturnsANewLi (text) {
     const newLi = document.createElement('li');
     newLi.innerText = text;
-    return newLi;
+    return item;
 }
 
-function takesInImageSourceToBeString(url,image) {
+// const item = takesInTextAndReturnsANewLi('TESTY');
+// appendToDiv(item);
+
+function addUrlToImage (url,image) {
     image.src = url;
 }
 
-function changeToSameClass(firstElement,secondElement) {
-    secondElement.classname = firstElement.classname;
+// const newImage = document.createElement('img');
+// const monkeyUrl = "https://previews.123rf.com/images/photoloader/photoloader1806/photoloader180600012/103436449-young-cute-monkey-eating-watermelon-in-forest-.jpg"
+// addUrlToImage(monkeyUrl,newImage);
+
+function cloneClass (element1, element2) {
+    element2.className = element1.className;
 }
 
-function makesAnElementWithThatId(tag,id) {
-    const newElement = document.createElement(tag);
-    newElement.id =id;
+// const thing1 = document.querySelector('#thing-1')
+// const thing2 = document.querySelector('#thing-2')
+// const thingC = document.querySelector('#thing-c')
+
+// cloneClass(thing1,thing2);
+// cloneClass(thing1,thingC); 
+
+function makeElementWithId(tagName,id){
+    const newElement = document.createElement(tagName);
+    newElement.id = id;
+
     return newElement;
 }
 
-function takesInTwoStringsAndDoesSomething(id, color) {
-    const element = document.querySelector(id);
-    element.style.color = color;
+function giveColorToElement (color, id) {
+    const newElement = document.createElement(id);
+    newElement.style.color = color;
 }
 
-appendToUl(takesInTextAndReturnsAnLi('kejal-1'));
-takesInTextAndReturnsAnLi('kejal-2');
-takesInTextAndReturnsAnLi('kejal-3');
+// giveColorToElement('green', '#heading')
+
